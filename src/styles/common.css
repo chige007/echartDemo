@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif;
+}
+html,
+body,
+ul,
+li,
+p,
+span,
+img {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  body {
+    font-size: 15px;
+  }
+}
+a,
+span,
+input,
+button,
+.btn,
+th,
+textarea,
+tr,
+.tab-pane {
+  text-decoration: none;
+  outline: none;
+}
+a:hover,
+span:hover,
+input:hover,
+button:hover,
+.btn:hover,
+th:hover,
+textarea:hover,
+tr:hover,
+.tab-pane:hover,
+a:active,
+span:active,
+input:active,
+button:active,
+.btn:active,
+th:active,
+textarea:active,
+tr:active,
+.tab-pane:active,
+a:focus,
+span:focus,
+input:focus,
+button:focus,
+.btn:focus,
+th:focus,
+textarea:focus,
+tr:focus,
+.tab-pane:focus,
+a:focus:active,
+span:focus:active,
+input:focus:active,
+button:focus:active,
+.btn:focus:active,
+th:focus:active,
+textarea:focus:active,
+tr:focus:active,
+.tab-pane:focus:active {
+  text-decoration: none!important;
+  outline: none!important;
+  box-shadow: none!important;
+}
+ul,
+li {
+  list-style: none;
+}
+[v-cloak] {
+  display: none;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #aaa!important;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #aaa!important;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #aaa!important;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #aaa!important;
+}
