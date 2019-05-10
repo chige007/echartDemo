@@ -60,7 +60,7 @@ export default {
                         name: '金额',
                         // min: 0,
                         // max: 250,
-                        // interval: 50,
+                        // interval: 50,    
                         axisLabel: {
                             formatter: '{value} 万元'
                         }
@@ -80,26 +80,43 @@ export default {
                     {
                         name:'18年集团收入',
                         type:'bar',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        },
                         data:[3404, 650, 572, 84, 0, 1277, 5985],
                         barWidth: '20%',
                         itemStyle: {
-                            barBorderRadius: [100, 100, 0, 0]
+                            barBorderRadius: [100, 100, 0, 0],
+                            color: '#7189bf'
                         }
                     },
                     {
                         name:'19年集团收入',
                         type:'bar',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        },
                         data:[4693, 681, 555, 276, 237, 1268, 7608],
                         barWidth: '20%',
                         itemStyle: {
-                            barBorderRadius: [100, 100, 0, 0]
+                            barBorderRadius: [100, 100, 0, 0],
+                            color: '#ee7777'
                         }
                     },
                     {
                         name:'同比增长',
                         type:'line',
                         yAxisIndex: 1,
-                        data:[38, -11, -3, 203, 100, -1, 27]
+                        data:[38, -11, -3, 203, 100, -1, 27],
+                        itemStyle: {
+                            color: '#49beb7'
+                        }
                     }
                 ]
             }

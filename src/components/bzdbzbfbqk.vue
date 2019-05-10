@@ -82,8 +82,15 @@ export default {
                         type:'bar',
                         data:[438347, 41914, 1544, 19905, 161793, 165303, 5376, 834184],
                         barWidth: '20%',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        },
                         itemStyle: {
-                            barBorderRadius: [100, 100, 0, 0]
+                            barBorderRadius: [100, 100, 0, 0],
+                            color: '#5588a3'
                         }
                     },
                     {
@@ -91,15 +98,25 @@ export default {
                         type:'bar',
                         data:[339954, 28428, 107, 12152, 179311, 257246, 25449, 846782],
                         barWidth: '20%',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        },
                         itemStyle: {
-                            barBorderRadius: [100, 100, 0, 0]
+                            barBorderRadius: [100, 100, 0, 0],
+                            color: '#d65a31'
                         }
                     },
                     {
                         name:'同比增长',
                         type:'line',
                         yAxisIndex: 1,
-                        data:[-22, -32, -93, -39, 11, 56, 373, 2]
+                        data:[-22, -32, -93, -39, 11, 56, 373, 2],
+                        itemStyle: {
+                            color: '#49beb7'
+                        }
                     }
                 ]
             }

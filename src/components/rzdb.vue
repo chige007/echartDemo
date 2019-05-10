@@ -8,14 +8,30 @@ export default {
     data () {
         return {
             options : {
-                title : {
+                title : [{
+                    text: '集团融资担保小微\n企业500万以下占比',
+                    textStyle: {
+                        fontSize: 18
+                    },
+                    textAlign: 'center',
+                    top: '46%',
+                    left: '27%'
+                },{
+                    text: '2019年\n集团融资担保存量业务\n企业类型占比情况',
+                    textStyle: {
+                        fontSize: 18,
+                    },
+                    textAlign: 'center',
+                    top: '44%',
+                    left: '74.5%'
+                },{
                     text: '集团融资担保业务小微企业占比指标',
                     x:'center',
                     textStyle: {
                         fontSize: 26
                     },
                     top: 10,
-                },
+                }],
                 tooltip : {
                     trigger: 'item',
                     formatter: "{a} <br/>{b} : {c} ({d}%)"
