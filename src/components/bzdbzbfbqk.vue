@@ -7,6 +7,7 @@
 export default {
     data () {
         return {
+            myChart: null,
             options : {
                 title: {
                     text: '保证担保在保分布情况',
@@ -125,10 +126,10 @@ export default {
     methods: {
         init () {
             var chart = this.$refs.chart;
-            var myChart = this.$echarts.init(chart);
-            myChart.setOption(this.options);
+            this.myChart = this.$echarts.init(chart);
+            this.myChart.setOption(this.options);
             window.addEventListener("resize", () => { 
-                myChart.resize();
+                this.myChart.resize();
             });
         }
     },
