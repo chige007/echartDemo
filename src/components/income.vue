@@ -294,8 +294,8 @@ export default {
         }]
         var index = 0;
         setInterval(() => {
-            this.options.series[0].data[0].value = radarData[index]['value'];
-            this.options.series[0].data[0].data[0]['name'] = radarData[index]['name'];
+            this.options.series[0].data[0]['value'] = radarData[index]['value'];
+            this.options.series[0].data[0]['name'] = radarData[index]['name'];
             this.myChart.setOption(options, true);
             index++;
             if(index == radarData.length)
