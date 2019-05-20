@@ -294,9 +294,12 @@ export default {
         }]
         var index = 0;
         setInterval(() => {
-            this.option.series[0].data[0].value = radarData[index]['value'];
-            this.option.series[0].data[0].data[0]['name'] = radarData[index]['name'];
-            this.myChart.setOption(option, true);
+            this.options.series[0].data[0].value = radarData[index]['value'];
+            this.options.series[0].data[0].data[0]['name'] = radarData[index]['name'];
+            this.myChart.setOption(options, true);
+            index++;
+            if(index == radarData.length)
+                index = 0;
         },2000);
     }
 }
