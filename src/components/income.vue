@@ -292,11 +292,11 @@ export default {
             name: '融资担保总部\n年度完成率',
             value: 45.34
         }]
-        var index = 0;
+        var index = 1;
         setInterval(() => {
             this.options.series[0].data[0]['value'] = radarData[index]['value'];
             this.options.series[0].data[0]['name'] = radarData[index]['name'];
-            this.myChart.setOption(options, true);
+            this.myChart.setOption(this.options, true);
             index++;
             if(index == radarData.length)
                 index = 0;
